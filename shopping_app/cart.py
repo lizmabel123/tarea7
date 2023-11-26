@@ -23,7 +23,7 @@ class Cart:
             price_list.append(item.price)
         return sum(price_list
 
-    def cart(self, customer):
+    def checkout(self, customer):
         for item in self.items:
             item.set_owner(customer)
         self.items = []
