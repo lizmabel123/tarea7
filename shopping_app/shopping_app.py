@@ -57,7 +57,7 @@ print(f"📦 {seller.name} availability")
 seller.show_items()
 print(f"😻👛 {seller.name} Wallet Balance: {seller.wallet.balance}")
 
-customer.cart.transfer_to_customer(customer)
+customer.cart.checkout(customer)
 print("🛒 Cart contents")
 customer.cart.show_items()
 print(f"🌚 Total amount: {customer.cart.total_amount()}")
