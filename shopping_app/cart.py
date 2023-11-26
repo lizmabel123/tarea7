@@ -9,8 +9,6 @@ class Cart:
     def add(self, item):
         self.items.append(item)
 
-  
-
     def items_list(self):
         return self.items
 
