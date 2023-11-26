@@ -9,11 +9,7 @@ class Cart:
     def add(self, item):
         self.items.append(item)
 
-    def transfer_to_customer(self, customer):
-        for item in self.items:
-            item.set_owner(customer)
-        self.items = []
-
+  
 
     def items_list(self):
         return self.items
@@ -25,7 +21,13 @@ class Cart:
         price_list = []
         for item in self.items:
             price_list.append(item.price)
-        return sum(price_list)
+        return sum(price_list
+
+    def cart(self, customer):
+        for item in self.items:
+            item.set_owner(customer)
+        self.items = []
+
 
          
         # Eliminar pase al codificar el método check_out.
